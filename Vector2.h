@@ -1,3 +1,5 @@
+#include <math.h>
+
 typedef struct {
 	float x = 0;
 	float y = 0;
