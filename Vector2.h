@@ -37,3 +37,11 @@ void Vector2_multi(struct Vector2* vec, int x, int y) {
 	(vec->x) *= (x);
 	(vec->x) *= (y);
 }
+void Vector2_div(struct Vector2* vec1, struct Vector2* vec2) {
+	(vec1->x) /= (vec2->x);
+	(vec1->y) /= (vec2->y);
+}
+void Vector2_div(struct Vector2* vec, int x, int y) {
+	(vec->x) /= (x);
+	(vec->x) /= (y);
+}
