@@ -53,3 +53,7 @@ void Vector2_div(struct Vector2* vec, float x, float y) {
 	(vec->x) /= (x);
 	(vec->x) /= (y);
 }
+void Vector2_sqrt(struct Vector2* vec) {
+	vec->x = (float) sqrt(vec->x);
+	vec->y = (float) sqrt(vec->y);
+}
