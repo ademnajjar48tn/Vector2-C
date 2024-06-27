@@ -13,6 +13,14 @@ struct Vector2* Vector2_new(int x = 0, int y = 0){
 
 	return result;
 }
+struct Vector2* Vector2_new(struct Vector2*) {
+	struct Vector2* result = (struct Vector2*) malloc(sizeof(struct Vector2));
+
+	result->x = Vector2->x;
+	result->y = Vector2->y;
+
+	return result;
+}
 void Vector2_add(struct Vector2* vec1, struct Vector2* vec2) {
 	(vec1->x) += (vec2->x);
 	(vec1->y) += (vec2->y);
