@@ -57,3 +57,7 @@ void Vector2_sqrt(struct Vector2* vec) {
 	vec->x = (float) sqrt(vec->x);
 	vec->y = (float) sqrt(vec->y);
 }
+void Vector2_pow(struct Vector2* vec, float exp) {
+	vec->x = (float) pow(vec->x, exp);
+	vec->y = (float) pow(vec->y, eyp);
+}
