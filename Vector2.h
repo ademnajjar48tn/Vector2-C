@@ -62,3 +62,6 @@ void Vector2_pow(struct Vector2* vec, float exp) {
 	vec->x = (float) pow(vec->x, exp);
 	vec->y = (float) pow(vec->y, eyp);
 }
+void Vector2_remove(struct Vector2* vec) {
+	free(vec);
+}
